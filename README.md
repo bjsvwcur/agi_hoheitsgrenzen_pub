@@ -32,7 +32,7 @@ Nachfolgende Befehle aus dem Verzeichnis /agi_hoheitsgrenzen_pub/development_dbs
 
 PW für admin = admin
 ```
- psql -h localhost -p 54321 -d edit -U admin -c "SET ROLE admin" --single-transaction -f agi_hoheitsgrenzen_pub_edit.sql -f agi_hoheitsgrenzen_pub_edit_grants.sql 
+ psql -h localhost -p 54321 -d edit -U admin -c "SET ROLE admin" --single-transaction -f agi_hoheitsgrenzen_pub_edit.sql -f agi_hoheitsgrenzen_pub_edit_grants.sql -f agi_dm01avso24.sql -f agi_dm01avso24_grants.sql 
  psql -h localhost -p 54322 -d pub -U admin -c "SET ROLE admin" --single-transaction -f agi_hoheitsgrenzen_pub_pub.sql -f agi_hoheitsgrenzen_pub_pub_grants.sql 
 ```
 
@@ -42,6 +42,8 @@ Nachfolgende Befehle aus dem Verzeichnis /agi_hoheitsgrenzen_pub/development_dbs
 
 #### !! ACHTUNG !! Pfad in den 2 Files zu ili2pg-4.3.1 anpassen
 ```
+./ili2pg_dataimportEdit_dm01avso24_2493.sh
+./ili2pg_dataimportEdit_dm01avso24_2499.sh
 ./ili2pg_dataimportEdit_hoheitsgrenzen.sh
 ```
 
