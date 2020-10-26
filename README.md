@@ -49,5 +49,5 @@ Nachfolgende Befehle aus dem Verzeichnis /agi_hoheitsgrenzen_pub/development_dbs
 
 Nachfolgende Befehle aus dem Verzeichnis */agi_hoheitsgrenzen_pub/agi_hoheitsgrenzen_pub/* ausführen:
 ```
-sudo -E ../start-gretl.sh --docker-image sogis/gretl-runtime:latest --docker-network agiavkasoabgleichpub_default --job-directory $PWD
+sudo -E ../start-gretl.sh --docker-image sogis/gretl-runtime:latest --docker-network agihoheitsgrenzenpub_default --job-directory $PWD
 ```
