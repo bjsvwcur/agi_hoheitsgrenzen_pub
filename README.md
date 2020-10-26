@@ -33,7 +33,7 @@ Nachfolgende Befehle aus dem Verzeichnis /agi_hoheitsgrenzen_pub/development_dbs
 PW für admin = admin
 ```
  psql -h localhost -p 54321 -d edit -U admin -c "SET ROLE admin" --single-transaction -f agi_hoheitsgrenzen_pub_edit.sql -f agi_hoheitsgrenzen_pub_edit_grants.sql 
- psql -h localhost -p 54322 -d pub -U admin -c "SET ROLE admin" --single-transaction -f agi_hoheitsgrenzen_pub_pub.sql -f agi_hoheitsgrenzen_pub_edit_pub.sql 
+ psql -h localhost -p 54322 -d pub -U admin -c "SET ROLE admin" --single-transaction -f agi_hoheitsgrenzen_pub_pub.sql -f agi_hoheitsgrenzen_pub_pub_grants.sql 
 ```
 
 Testdaten in edit-DB importieren:
